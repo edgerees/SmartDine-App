@@ -1,34 +1,41 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #27f1ff;
+  background-color: #f0f0f0;
 }
 
 .phone {
-  width: 300px;
-  height: 550px;
-  margin: 40px auto;
+  width: 100%;
+  max-width: 375px;
+  height: fit-content;
+  margin: 0 auto;
   padding: 20px;
-  border: 2px solid black;
-  border-radius: 25px;
-  background-color: #d1d1eb;
+  box-sizing: border-box;
+  background-color: #ffecc4;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 h1 {
-  margin-top: 20px;
+  margin-top: 10px;
+  font-size: 48px;
   color: red;
 }
 
 h2 {
   color: red;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  color: red;
 }
 
 button {
-  margin-top: 40px;
+  margin-top: 10px;
   padding: 12px 20px;
   font-size: 16px;
-  background-color: #0077ff;
+  background-color: #0066ff;
   color: white;
   border: none;
   border-radius: 10px;
@@ -36,12 +43,30 @@ button {
 }
 
 button:hover {
-  background-color: #0055cc;
+  background-color: #0b5ed7;
 }
 
-.recommendation {
-  margin-top: 30px;
+.recommendations {
+  margin-top: 25px;
+}
+
+.recommendation-card {
+  margin-top: 20px;
   padding: 15px;
+  background-color: white;
+  color: #000;
   border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+.recommendation-card h4 {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.meal-details {
+  margin-top: 12px;
+  padding: 10px;
+  background-color: #f7f7f7;
   border-radius: 10px;
 }
