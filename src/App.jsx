@@ -1,12 +1,20 @@
 import { useState } from "react";
 import "./App.css";
+import { filterDiningOptions } from "./RecommendationService";
 
 function App() {
   const [showRecommendations, setShowRecommendations] = useState(false);
   const [openMeal, setOpenMeal] = useState(null);
+  const [filterType, setFilterType] = useState("");
+  const [locations, setLocations] = useState([]);
 
   const handleGetRecommendation = () => {
     setShowRecommendations(true);
+    setLocations(filterDiningOptions(filterType));
+  };
+
+  const handleFilterChange = (event) => {
+    setFilterType(event.target.value);
   };
 
   const toggleMealDetails = (mealNumber) => {
@@ -22,62 +30,54 @@ function App() {
       <h1>SmartDine</h1>
       <h2>Find the best place to eat between classes</h2>
 
-      <button onClick={handleGetRecommendation}>Get Recommendation</button>
+      <select onChange={handleFilterChange}>
+        <option value="">Select Filter</option>
+        <option value="protein">Highest Protein</option>
+        <option value="calories">Lowest Calories</option>
+        <option value="cost">Lowest Cost</option>
+      </select>
+
+      <button onClick={handleGetRecommendation}>
+        Get Recommendation
+      </button>
 
       {showRecommendations && (
         <div className="recommendations">
           <h3>Ranked Dining Recommendations</h3>
 
-          <div className="recommendation-card">
-            <h4>1. Southside</h4>
-            <p>3-minute wait, high-protein option available</p>
-            <button onClick={() => toggleMealDetails(1)}>
-              {openMeal === 1 ? "Hide Meal Details" : "View Meal Details"}
-            </button>
+          {locations.map((location) => (
+            <div
+              key={location.id}
+              className="recommendation-card"
+            >
+              <h4>
+                {location.id}. {location.name}
+              </h4>
 
-            {openMeal === 1 && (
-              <div className="meal-details">
-                <p>Meal: Grilled Chicken Bowl</p>
-                <p>Calories: 550</p>
-                <p>Protein: 42g</p>
-                <p>Cost: 1 meal swipe</p>
-              </div>
-            )}
-          </div>
+              <p>
+                {location.wait}
+              </p>
 
-          <div className="recommendation-card">
-            <h4>2. Eastside</h4>
-            <p>5-minute wait, balanced meal option available</p>
-            <button onClick={() => toggleMealDetails(2)}>
-              {openMeal === 2 ? "Hide Meal Details" : "View Meal Details"}
-            </button>
+              <button
+                onClick={() =>
+                  toggleMealDetails(location.id)
+                }
+              >
+                {openMeal === location.id
+                  ? "Hide Meal Details"
+                  : "View Meal Details"}
+              </button>
 
-            {openMeal === 2 && (
-              <div className="meal-details">
-                <p>Meal: Turkey Sandwich Combo</p>
-                <p>Calories: 620</p>
-                <p>Protein: 30g</p>
-                <p>Cost: $8 dining dollars</p>
-              </div>
-            )}
-          </div>
-
-          <div className="recommendation-card">
-            <h4>3. Northside</h4>
-            <p>7-minute wait, lighter option available</p>
-            <button onClick={() => toggleMealDetails(3)}>
-              {openMeal === 3 ? "Hide Meal Details" : "View Meal Details"}
-            </button>
-
-            {openMeal === 3 && (
-              <div className="meal-details">
-                <p>Meal: Veggie Wrap</p>
-                <p>Calories: 430</p>
-                <p>Protein: 18g</p>
-                <p>Cost: $7 dining dollars</p>
-              </div>
-            )}
-          </div>
+              {openMeal === location.id && (
+                <div className="meal-details">
+                  <p>Meal: {location.meal}</p>
+                  <p>Calories: {location.calories}</p>
+                  <p>Protein: {location.protein}g</p>
+                  <p>Cost: ${location.cost}</p>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       )}
     </div>
