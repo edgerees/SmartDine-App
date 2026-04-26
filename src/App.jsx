@@ -8,9 +8,10 @@ function App() {
   const [filterType, setFilterType] = useState("");
   const [locations, setLocations] = useState([]);
 
-  const handleGetRecommendation = () => {
+  const handleGetRecommendation = async () => {
+    const results = await filterDiningOptions(filterType);
+    setLocations(results);
     setShowRecommendations(true);
-    setLocations(filterDiningOptions(filterType));
   };
 
   const handleFilterChange = (event) => {
