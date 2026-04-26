@@ -1,4 +1,4 @@
-import { getDiningLocations } from "./DiningRepository";
+import { getDiningLocations } from "../repository/DiningRepository";
 
 export function filterDiningOptions(filterType) {
   let locations = getDiningLocations();

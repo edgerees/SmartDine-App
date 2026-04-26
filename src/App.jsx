@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { filterDiningOptions } from "./RecommendationService";
+import { filterDiningOptions } from "./services/RecommendationService";
 
 function App() {
   const [showRecommendations, setShowRecommendations] = useState(false);
