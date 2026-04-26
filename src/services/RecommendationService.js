@@ -2,7 +2,6 @@ import { getDiningLocations } from "../repository/DiningRepository";
 
 export async function filterDiningOptions(filterType) {
   const locations = await getDiningLocations();
-  console.log("locations:", locations)
 
   const flatLocations = locations.map((location) => ({
     ...location,
@@ -13,14 +12,23 @@ export async function filterDiningOptions(filterType) {
   }));
 
   if (filterType === "protein") {
-    return flatLocations.sort((a, b) => b.protein - a.protein);
+    return flatLocations.sort((a, b) => {
+      if (b.protein !== a.protein) return b.protein - a.protein;
+      return a.waitTime - b.waitTime;
+    });
   }
   if (filterType === "calories") {
-    return flatLocations.sort((a, b) => a.calories - b.calories);
+    return flatLocations.sort((a, b) => {
+      if (a.calories !== b.calories) return a.calories - b.calories;
+      return a.waitTime - b.waitTime;
+    });
   }
   if (filterType === "cost") {
-    return flatLocations.sort((a, b) => a.cost - b.cost);
+    return flatLocations.sort((a, b) => {
+      if (a.cost !== b.cost) return a.cost - b.cost;
+      return a.waitTime - b.waitTime;
+    });
   }
 
-  return flatLocations;
+  return flatLocations.sort((a, b) => a.waitTime - b.waitTime);
 }

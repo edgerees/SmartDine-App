@@ -18,11 +18,11 @@ function App() {
     setFilterType(event.target.value);
   };
 
-  const toggleMealDetails = (mealNumber) => {
-    if (openMeal === mealNumber) {
+  const toggleMealDetails = (locationName) => {
+    if (openMeal === locationName) {
       setOpenMeal(null);
     } else {
-      setOpenMeal(mealNumber);
+      setOpenMeal(locationName);
     }
   };
 
@@ -48,33 +48,31 @@ function App() {
 
           {locations.map((location) => (
             <div
-              key={location.id}
+              key={location.name}
               className="recommendation-card"
             >
-              <h4>
-                {location.id}. {location.name}
-              </h4>
-
-              <p>
-                {location.wait}
-              </p>
+              <h4>{location.name}</h4>
+              <p>{location.wait}</p>
 
               <button
-                onClick={() =>
-                  toggleMealDetails(location.id)
-                }
+                onClick={() => toggleMealDetails(location.name)}
               >
-                {openMeal === location.id
+                {openMeal === location.name
                   ? "Hide Meal Details"
                   : "View Meal Details"}
               </button>
 
-              {openMeal === location.id && (
+              {openMeal === location.name && (
                 <div className="meal-details">
-                  <p>Meal: {location.meal}</p>
-                  <p>Calories: {location.calories}</p>
-                  <p>Protein: {location.protein}g</p>
-                  <p>Cost: ${location.cost}</p>
+                  {location.meals.map((item, index) => (
+                    <div key={index}>
+                      <p>{item.meal}</p>
+                      <p>Calories: {item.calories}</p>
+                      <p>Protein: {item.protein}g</p>
+                      <p>Cost: {item.cost === 0 ? "Meal Swipe" : `$${item.cost}`}</p>
+                      <hr />
+                    </div>
+                  ))}
                 </div>
               )}
             </div>

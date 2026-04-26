@@ -11,62 +11,62 @@ const diningLocations = [
   {
     id: 1,
     name: "Southside",
-    wait: "3-minute wait",
-    waitTime: 3,
+    wait: "5 minute wait",
+    waitTime: 5,
     category: "Dining Hall",
-    location: "Center of Campus",
+    location: "4353 Chesapeake River Way, Fairfax, VA 22030",
     meals: [
-      { meal: "Grilled Chicken Bowl", calories: 550, protein: 42, cost: 0 },
-      { meal: "Beef Stir Fry", calories: 620, protein: 38, cost: 0 },
-      { meal: "Veggie Pasta", calories: 410, protein: 15, cost: 0 }
+      { meal: "Grilled Chicken Bowl", calories: 550, protein: 42, cost: 12 },
+      { meal: "Beef Stir Fry", calories: 620, protein: 38, cost: 12 },
+      { meal: "Veggie Pasta", calories: 410, protein: 15, cost: 12 }
     ]
   },
   {
     id: 2,
     name: "Ike's",
-    wait: "5-minute wait",
-    waitTime: 5,
+    wait: "3 minute wait",
+    waitTime: 3,
     category: "Dining Hall",
-    location: "Presidents Park",
+    location: "10445 Presidents Park Dr, Fairfax, VA 22030",
     meals: [
-      { meal: "BBQ Bacon Burger", calories: 750, protein: 45, cost: 0 },
-      { meal: "Grilled Salmon", calories: 520, protein: 48, cost: 0 },
-      { meal: "Caesar Salad with Chicken", calories: 430, protein: 35, cost: 0 }
+      { meal: "BBQ Bacon Burger", calories: 750, protein: 45, cost: 12 },
+      { meal: "Grilled Salmon", calories: 520, protein: 48, cost: 12 },
+      { meal: "Caesar Salad with Chicken", calories: 430, protein: 35, cost: 12 }
     ]
   },
   {
     id: 3,
     name: "The Globe",
-    wait: "7-minute wait",
-    waitTime: 7,
+    wait: "2 minute wait",
+    waitTime: 2,
     category: "Dining Hall",
-    location: "Globe Building",
+    location: "4352 Mason Pond Dr, Fairfax, VA 22030",
     meals: [
-      { meal: "Teriyaki Rice Bowl", calories: 600, protein: 28, cost: 0 },
-      { meal: "Chicken Tikka Masala", calories: 650, protein: 40, cost: 0 },
-      { meal: "Vegetable Curry", calories: 380, protein: 12, cost: 0 }
+      { meal: "Teriyaki Rice Bowl", calories: 600, protein: 28, cost: 12 },
+      { meal: "Chicken Tikka Masala", calories: 650, protein: 40, cost: 12 },
+      { meal: "Vegetable Curry", calories: 380, protein: 12, cost: 12 }
     ]
   },
   {
     id: 4,
     name: "The Spot",
-    wait: "4-minute wait",
-    waitTime: 4,
+    wait: "No wait",
+    waitTime: 0,
     category: "Dining Hall",
-    location: "Fairfax Campus",
+    location: "4401 Patriot Cir, Fairfax, Virginia",
     meals: [
-      { meal: "Impossible Burger", calories: 480, protein: 25, cost: 0 },
-      { meal: "Vegan Buddha Bowl", calories: 420, protein: 18, cost: 0 },
-      { meal: "Lentil Soup & Bread", calories: 350, protein: 16, cost: 0 }
+      { meal: "Impossible Burger", calories: 480, protein: 25, cost: 12 },
+      { meal: "Vegan Buddha Bowl", calories: 420, protein: 18, cost: 12 },
+      { meal: "Lentil Soup & Bread", calories: 350, protein: 16, cost: 12 }
     ]
   },
   {
     id: 5,
     name: "Chick-fil-A",
-    wait: "8-minute wait",
-    waitTime: 8,
+    wait: "7 minute wait",
+    waitTime: 7,
     category: "Retail",
-    location: "Johnson Center",
+    location: "Student Union, 4400 University Dr Building 1, Fairfax, VA 22030",
     meals: [
       { meal: "Chicken Sandwich Combo", calories: 670, protein: 38, cost: 9 },
       { meal: "Grilled Nuggets", calories: 360, protein: 42, cost: 8 },
@@ -76,10 +76,10 @@ const diningLocations = [
   {
     id: 6,
     name: "Chipotle",
-    wait: "10-minute wait",
+    wait: "10 minute wait",
     waitTime: 10,
     category: "Retail",
-    location: "Johnson Center",
+    location: "4477 Aquia Creek Ln, Fairfax, VA 22030",
     meals: [
       { meal: "Chicken Burrito Bowl", calories: 720, protein: 44, cost: 10 },
       { meal: "Steak Tacos", calories: 620, protein: 38, cost: 11 },
@@ -89,10 +89,10 @@ const diningLocations = [
   {
     id: 7,
     name: "Panera Bread",
-    wait: "6-minute wait",
-    waitTime: 6,
+    wait: "12 minute wait",
+    waitTime: 12,
     category: "Retail",
-    location: "Johnson Center",
+    location: "4477 Aquia Creek Ln, Fairfax, VA 22030",
     meals: [
       { meal: "You Pick Two", calories: 500, protein: 22, cost: 11 },
       { meal: "Turkey Sandwich", calories: 450, protein: 28, cost: 10 },
@@ -102,10 +102,10 @@ const diningLocations = [
   {
     id: 8,
     name: "Einstein Bros. Bagels",
-    wait: "5-minute wait",
+    wait: "5 minute wait",
     waitTime: 5,
     category: "Cafe",
-    location: "Merten Hall",
+    location: "4441 George Mason Blvd, Fairfax, VA 22030",
     meals: [
       { meal: "Bagel with Cream Cheese", calories: 380, protein: 12, cost: 7 },
       { meal: "Turkey Sausage Sandwich", calories: 480, protein: 28, cost: 9 },
@@ -115,10 +115,10 @@ const diningLocations = [
   {
     id: 9,
     name: "The Eaterie",
-    wait: "6-minute wait",
-    waitTime: 6,
+    wait: "8 minute wait",
+    waitTime: 8,
     category: "Retail",
-    location: "Fairfax Campus",
+    location: "4469 Aquia Creek Ln, Fairfax, VA 22030",
     meals: [
       { meal: "Made-to-Order Sandwich", calories: 520, protein: 30, cost: 9 },
       { meal: "Grain Bowl", calories: 490, protein: 22, cost: 10 },
@@ -128,10 +128,10 @@ const diningLocations = [
   {
     id: 10,
     name: "Starbucks",
-    wait: "7-minute wait",
+    wait: "7 minute wait",
     waitTime: 7,
     category: "Cafe",
-    location: "Johnson Center",
+    location: "4477 Aquia Creek Ln, Fairfax, VA 22030",
     meals: [
       { meal: "Protein Box & Latte", calories: 420, protein: 18, cost: 12 },
       { meal: "Egg & Cheese Sandwich", calories: 380, protein: 16, cost: 8 },
@@ -141,10 +141,10 @@ const diningLocations = [
   {
     id: 11,
     name: "Panda Express",
-    wait: "8-minute wait",
-    waitTime: 8,
+    wait: "3 minute wait",
+    waitTime: 3,
     category: "Retail",
-    location: "Johnson Center",
+    location: "4441 George Mason Blvd University Hall, Fairfax, VA 22030",
     meals: [
       { meal: "Orange Chicken Plate", calories: 890, protein: 32, cost: 10 },
       { meal: "Grilled Teriyaki Chicken", calories: 640, protein: 46, cost: 10 },
@@ -154,10 +154,10 @@ const diningLocations = [
   {
     id: 12,
     name: "The Halal Guys",
-    wait: "9-minute wait",
-    waitTime: 9,
+    wait: "2 minute wait",
+    waitTime: 2,
     category: "Retail",
-    location: "Johnson Center",
+    location: "4477 Aquia Creek Ln, Fairfax, VA 22030",
     meals: [
       { meal: "Chicken Over Rice", calories: 790, protein: 48, cost: 11 },
       { meal: "Gyro Combo", calories: 820, protein: 44, cost: 12 },
@@ -166,12 +166,44 @@ const diningLocations = [
   }
 ];
 
+function getEstimatedWaitTime(baseWaitTime) {
+  const hour = new Date().getHours();
+
+  // Early morning - very quiet
+  if (hour >= 6 && hour < 8) return baseWaitTime - 1;
+  // Breakfast rush
+  if (hour >= 8 && hour < 10) return baseWaitTime + 2;
+  // Mid morning - quiet
+  if (hour >= 10 && hour < 11) return baseWaitTime;
+  // Lunch rush
+  if (hour >= 11 && hour < 13) return baseWaitTime + 5;
+  // Early afternoon - moderate
+  if (hour >= 13 && hour < 17) return baseWaitTime + 1;
+  // Dinner rush
+  if (hour >= 17 && hour < 19) return baseWaitTime + 4;
+  // Late evening - busy
+  if (hour >= 19 && hour < 22) return baseWaitTime + 2;
+  // Late night
+  return baseWaitTime - 1;
+}
+
 app.get("/", (req, res) => {
   res.send("SmartDine backend is running");
 });
 
 app.get("/api/dining", (req, res) => {
-  res.json(diningLocations);
+  const locationsWithWaitTimes = diningLocations.map((location) => {
+    const estimatedWait = getEstimatedWaitTime(location.waitTime);
+    const finalWait = Math.max(0, estimatedWait);
+
+    return {
+      ...location,
+      waitTime: finalWait,
+      wait: `${finalWait} minute wait`
+    };
+  });
+
+  res.json(locationsWithWaitTimes);
 });
 
 app.listen(PORT, () => {
