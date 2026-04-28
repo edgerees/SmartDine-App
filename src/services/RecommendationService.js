@@ -1,6 +1,7 @@
 import { getDiningLocations } from "../repository/DiningRepository";
 
 export async function filterDiningOptions(filterType) {
+  // Fetch all dining locations from the backend
   const locations = await getDiningLocations();
 
   const flatLocations = locations.map((location) => ({
@@ -11,18 +12,21 @@ export async function filterDiningOptions(filterType) {
     cost: location.meals[0].cost
   }));
 
+  // Sort by highest protien
   if (filterType === "protein") {
     return flatLocations.sort((a, b) => {
       if (b.protein !== a.protein) return b.protein - a.protein;
       return a.waitTime - b.waitTime;
     });
   }
+  // Sort by lowest calories
   if (filterType === "calories") {
     return flatLocations.sort((a, b) => {
       if (a.calories !== b.calories) return a.calories - b.calories;
       return a.waitTime - b.waitTime;
     });
   }
+  // Sort by lowest protien
   if (filterType === "cost") {
     return flatLocations.sort((a, b) => {
       if (a.cost !== b.cost) return a.cost - b.cost;
