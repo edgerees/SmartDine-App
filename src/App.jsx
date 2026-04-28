@@ -53,6 +53,7 @@ function App() {
             >
               <h4>{location.name}</h4>
               <p>{location.wait}</p>
+              {location.walkTimeText && <p>{location.walkTimeText} away</p>}
 
               <button
                 onClick={() => toggleMealDetails(location.name)}
