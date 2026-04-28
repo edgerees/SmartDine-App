@@ -31,16 +31,29 @@ function App() {
       <h1>SmartDine</h1>
       <h2>Find the best place to eat between classes</h2>
 
-      <select onChange={handleFilterChange}>
-        <option value="">Select Filter</option>
-        <option value="protein">Highest Protein</option>
-        <option value="calories">Lowest Calories</option>
-        <option value="cost">Lowest Cost</option>
-      </select>
+      <div className="filter-controls">
+  <select value={filterType} onChange={handleFilterChange}>
+    <option value="">Default Ranking</option>
+    <option value="protein">Highest Protein</option>
+    <option value="calories">Lowest Calories</option>
+    <option value="cost">Lowest Cost</option>
+  </select>
 
-      <button onClick={handleGetRecommendation}>
-        Get Recommendation
-      </button>
+  <button onClick={handleGetRecommendation}>
+    Get Recommendation
+  </button>
+
+  <button
+    onClick={() => {
+      setFilterType("");
+      setLocations([]);
+      setShowRecommendations(false);
+      setOpenMeal(null);
+    }}
+  >
+    Reset Filters
+  </button>
+</div>
 
       {showRecommendations && (
         <div className="recommendations">
