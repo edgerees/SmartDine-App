@@ -1,16 +1,20 @@
 import { useState } from "react";
 import "./App.css";
-import { filterDiningOptions } from "./services/RecommendationService";
+import { filterDiningOptions, generateRecommendation } from "./services/RecommendationService";
 
 function App() {
   const [showRecommendations, setShowRecommendations] = useState(false);
   const [openMeal, setOpenMeal] = useState(null);
   const [filterType, setFilterType] = useState("");
   const [locations, setLocations] = useState([]);
+  const [recommendation, setRecommendation] = useState("");
 
   const handleGetRecommendation = async () => {
     const results = await filterDiningOptions(filterType);
     setLocations(results);
+    const sentence = generateRecommendation(results[0], filterType);
+    console.log("recommendation:", sentence);
+    setRecommendation(sentence);
     setShowRecommendations(true);
   };
 
@@ -58,6 +62,7 @@ function App() {
       {showRecommendations && (
         <div className="recommendations">
           <h3>Ranked Dining Recommendations</h3>
+          {recommendation && <p className="recommendation-sentence">{recommendation}</p>}
 
           {locations.map((location) => (
             <div

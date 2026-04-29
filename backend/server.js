@@ -31,19 +31,19 @@ function getWalkTime(miles) {
 function getEstimatedWaitTime(baseWaitTime) {
   const hour = new Date().getHours();
 
-  // Early morning - very quiet
+  // Early morning (very quiet)
   if (hour >= 6 && hour < 8) return baseWaitTime - 1;
   // Breakfast rush
   if (hour >= 8 && hour < 10) return baseWaitTime + 2;
-  // Mid morning - quiet
+  // Mid morning (quiet)
   if (hour >= 10 && hour < 11) return baseWaitTime;
   // Lunch rush
   if (hour >= 11 && hour < 13) return baseWaitTime + 5;
-  // Early afternoon - moderate
+  // Early afternoon (moderate)
   if (hour >= 13 && hour < 17) return baseWaitTime + 1;
   // Dinner rush
   if (hour >= 17 && hour < 19) return baseWaitTime + 4;
-  // Late evening - busy
+  // Late evening (busy)
   if (hour >= 19 && hour < 22) return baseWaitTime + 2;
   // Late night
   return baseWaitTime - 1;
