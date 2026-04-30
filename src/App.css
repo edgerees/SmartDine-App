@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 .phone {
@@ -8,80 +8,180 @@ body {
   max-width: 375px;
   height: fit-content;
   margin: 0 auto;
-  padding: 20px;
+  padding: 16px;
   box-sizing: border-box;
   background-color: #ffecc4;
   text-align: center;
-  color: white;
 }
 
+/* Header */
 h1 {
-  margin-top: 10px;
-  font-size: 48px;
-  color: red;
+  margin-top: 6px;
+  font-size: 36px;
+  color: black;
+  letter-spacing: 1px;
 }
 
 h2 {
-  color: red;
-  font-size: 18px;
-  margin-bottom: 30px;
+  color: #c45000;
+  font-size: 14px;
+  margin-bottom: 16px;
+  margin-top: 4px;
 }
 
 h3 {
-  color: red;
+  color: #c45000;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 
+/* Filter controls */
+.filter-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.filter-controls select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  border: 1px solid #e08000;
+  background-color: #fff8ee;
+  color: #c45000;
+}
+
+/* Buttons */
 button {
-  margin-top: 10px;
-  padding: 12px 20px;
-  font-size: 16px;
-  background-color: #0066ff;
+  margin-top: 0;
+  padding: 8px 14px;
+  font-size: 13px;
+  background-color: #c45000;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0b5ed7;
+  background-color: #a33d00;
+}
+
+/* Recommendation sentence */
+.recommendation-sentence {
+  color: #7a3000;
+  font-size: 13px;
+  font-style: italic;
+  margin: 8px 0 12px 0;
+  padding: 10px 14px;
+  background-color: #fff3dc;
+  border-radius: 10px;
+  border-left: 4px solid #c45000;
+  text-align: left;
 }
 
 .recommendations {
-  margin-top: 25px;
+  margin-top: 16px;
 }
 
+/* 2x2 grid for top 4 */
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* Cards */
 .recommendation-card {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: white;
-  color: #000;
-  border: 1px solid #ccc;
+  margin-top: 0;
+  padding: 10px;
+  background-color: #fff8ee;
+  color: #1a1a1a;
+  border: 1px solid #e08000;
   border-radius: 12px;
+  font-size: 12px;
+  position: relative;
 }
 
 .recommendation-card h4 {
-  margin-bottom: 10px;
-  color: #000;
+  font-size: 13px;
+  margin-bottom: 4px;
+  margin-top: 8px;
+  color: #c45000;
 }
 
-.meal-details {
-  margin-top: 12px;
-  padding: 10px;
-  background-color: #f7f7f7;
-  border-radius: 10px;
+.recommendation-card p {
+  font-size: 11px;
+  margin: 3px 0;
+  color: #555;
 }
 
-.filter-controls {
+.recommendation-card button {
+  font-size: 11px;
+  padding: 5px 10px;
+  margin-top: 8px;
+  background-color: #c45000;
+}
+
+/* Rank badge */
+.rank-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: #c45000;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
   display: flex;
-  gap: 10px;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+  justify-content: center;
 }
 
-.filter-controls select {
-  padding: 10px;
+/* Meal details */
+.meal-details {
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #fff3dc;
   border-radius: 8px;
-  font-size: 16px;
+  text-align: left;
+}
+
+.meal-details p {
+  font-size: 11px;
+  margin: 2px 0;
+  color: #555;
+}
+
+/* Show more button */
+.show-more-container {
+  margin-top: 10px;
+}
+
+.show-more-btn {
+  background-color: transparent;
+  color: #c45000;
+  border: 1.5px solid #c45000;
+  width: 100%;
+  margin-top: 0;
+}
+
+.show-more-btn:hover {
+  background-color: #c45000;
+  color: white;
+}
+
+/* More locations grid */
+.more-locations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 10px;
 }

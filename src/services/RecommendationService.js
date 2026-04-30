@@ -78,7 +78,7 @@ export async function filterDiningOptions(filterType) {
 export function generateRecommendation(topLocation, filterType) {
   const name = topLocation.name;
   const wait = topLocation.wait;
-  const walk = topLocation.walkTimeText ? `${topLocation.walkTimeText} walk` : "nearby";
+  const walk = topLocation.walkTimeText ? topLocation.walkTimeText : "nearby";
 
   // Pick a reason based on the filter the student selected
   let reason = "";
@@ -88,7 +88,8 @@ export function generateRecommendation(topLocation, filterType) {
   if (!filterType) reason = "shortest wait time";
 
   // Check if it uses a meal swipe or costs money
-  const payment = topLocation.cost === 0 ? "meal swipe accepted" : `$${topLocation.cost}`;
+  const mealCost = topLocation.meals[0].cost;
+  const payment = mealCost === 0 ? "meal swipe accepted" : `$${mealCost}`;
 
   return `Go to ${name} now: ${wait}, ${walk}, ${reason}, and ${payment}.`;
 }
