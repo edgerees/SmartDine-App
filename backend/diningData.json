@@ -7,10 +7,11 @@
     "waitTime": 5,
     "category": "Dining Hall",
     "location": "4353 Chesapeake River Way, Fairfax, VA 22030",
+    "dietaryOptions": ["vegetarian", "halal", "kosher"],
     "meals": [
-      { "meal": "Grilled Chicken Bowl", "calories": 550, "protein": 42, "cost": 0 },
-      { "meal": "Beef Stir Fry", "calories": 620, "protein": 38, "cost": 0 },
-      { "meal": "Veggie Pasta", "calories": 410, "protein": 15, "cost": 0 }
+      { "meal": "Halal Grilled Chicken Bowl", "calories": 550, "protein": 42, "cost": 0, "dietaryTags": ["halal"] },
+      { "meal": "Kosher Turkey Plate", "calories": 590, "protein": 36, "cost": 0, "dietaryTags": ["kosher"] },
+      { "meal": "Veggie Pasta", "calories": 410, "protein": 15, "cost": 0, "dietaryTags": ["vegetarian"] }
     ]
   },
   {
@@ -21,10 +22,11 @@
     "waitTime": 3,
     "category": "Dining Hall",
     "location": "10445 Presidents Park Dr, Fairfax, VA 22030",
+    "dietaryOptions": ["vegetarian", "kosher"],
     "meals": [
-      { "meal": "BBQ Bacon Burger", "calories": 750, "protein": 45, "cost": 0 },
-      { "meal": "Grilled Salmon", "calories": 520, "protein": 48, "cost": 0 },
-      { "meal": "Caesar Salad with Chicken", "calories": 430, "protein": 35, "cost": 0 }
+      { "meal": "BBQ Bacon Burger", "calories": 750, "protein": 45, "cost": 0, "dietaryTags": [] },
+      { "meal": "Kosher Grilled Salmon", "calories": 520, "protein": 48, "cost": 0, "dietaryTags": ["kosher"] },
+      { "meal": "Vegetarian Caesar Salad", "calories": 360, "protein": 18, "cost": 0, "dietaryTags": ["vegetarian"] }
     ]
   },
   {
@@ -35,10 +37,11 @@
     "waitTime": 2,
     "category": "Dining Hall",
     "location": "4352 Mason Pond Dr, Fairfax, VA 22030",
+    "dietaryOptions": ["vegetarian", "halal"],
     "meals": [
-      { "meal": "Teriyaki Rice Bowl", "calories": 600, "protein": 28, "cost": 0 },
-      { "meal": "Chicken Tikka Masala", "calories": 650, "protein": 40, "cost": 0 },
-      { "meal": "Vegetable Curry", "calories": 380, "protein": 12, "cost": 0 }
+      { "meal": "Teriyaki Rice Bowl", "calories": 600, "protein": 28, "cost": 0, "dietaryTags": [] },
+      { "meal": "Halal Chicken Tikka Masala", "calories": 650, "protein": 40, "cost": 0, "dietaryTags": ["halal"] },
+      { "meal": "Vegetable Curry", "calories": 380, "protein": 12, "cost": 0, "dietaryTags": ["vegetarian", "halal"] }
     ]
   },
   {
@@ -49,10 +52,11 @@
     "waitTime": 0,
     "category": "Dining Hall",
     "location": "4401 Patriot Cir, Fairfax, VA 22030",
+    "dietaryOptions": ["vegetarian"],
     "meals": [
-      { "meal": "Impossible Burger", "calories": 480, "protein": 25, "cost": 0 },
-      { "meal": "Vegan Buddha Bowl", "calories": 420, "protein": 18, "cost": 0 },
-      { "meal": "Lentil Soup & Bread", "calories": 350, "protein": 16, "cost": 0 }
+      { "meal": "Impossible Burger", "calories": 480, "protein": 25, "cost": 0, "dietaryTags": ["vegetarian"] },
+      { "meal": "Vegan Buddha Bowl", "calories": 420, "protein": 18, "cost": 0, "dietaryTags": ["vegetarian"] },
+      { "meal": "Lentil Soup & Bread", "calories": 350, "protein": 16, "cost": 0, "dietaryTags": ["vegetarian"] }
     ]
   },
   {
@@ -63,10 +67,11 @@
     "waitTime": 7,
     "category": "Retail",
     "location": "Student Union Building 1, Fairfax, VA 22030",
+    "dietaryOptions": [],
     "meals": [
-      { "meal": "Chicken Sandwich Combo", "calories": 670, "protein": 38, "cost": 9 },
-      { "meal": "Grilled Nuggets", "calories": 360, "protein": 42, "cost": 8 },
-      { "meal": "Spicy Deluxe Sandwich", "calories": 720, "protein": 40, "cost": 10 }
+      { "meal": "Chicken Sandwich Combo", "calories": 670, "protein": 38, "cost": 9, "dietaryTags": [] },
+      { "meal": "Grilled Nuggets", "calories": 360, "protein": 42, "cost": 8, "dietaryTags": [] },
+      { "meal": "Spicy Deluxe Sandwich", "calories": 720, "protein": 40, "cost": 10, "dietaryTags": [] }
     ]
   },
   {
@@ -77,10 +82,11 @@
     "waitTime": 10,
     "category": "Retail",
     "location": "4477 Aquia Creek Ln, Fairfax, VA 22030",
+    "dietaryOptions": ["vegetarian", "halal"],
     "meals": [
-      { "meal": "Chicken Burrito Bowl", "calories": 720, "protein": 44, "cost": 10 },
-      { "meal": "Steak Tacos", "calories": 620, "protein": 38, "cost": 11 },
-      { "meal": "Veggie Burrito", "calories": 530, "protein": 18, "cost": 9 }
+      { "meal": "Halal Chicken Burrito Bowl", "calories": 720, "protein": 44, "cost": 10, "dietaryTags": ["halal"] },
+      { "meal": "Steak Tacos", "calories": 620, "protein": 38, "cost": 11, "dietaryTags": [] },
+      { "meal": "Veggie Burrito", "calories": 530, "protein": 18, "cost": 9, "dietaryTags": ["vegetarian"] }
     ]
   },
   {
@@ -91,10 +97,11 @@
     "waitTime": 12,
     "category": "Retail",
     "location": "Johnson Center, Fairfax, VA 22030",
+    "dietaryOptions": ["vegetarian"],
     "meals": [
-      { "meal": "You Pick Two", "calories": 500, "protein": 22, "cost": 11 },
-      { "meal": "Turkey Sandwich", "calories": 450, "protein": 28, "cost": 10 },
-      { "meal": "Broccoli Cheddar Soup", "calories": 340, "protein": 12, "cost": 8 }
+      { "meal": "You Pick Two", "calories": 500, "protein": 22, "cost": 11, "dietaryTags": [] },
+      { "meal": "Turkey Sandwich", "calories": 450, "protein": 28, "cost": 10, "dietaryTags": [] },
+      { "meal": "Broccoli Cheddar Soup", "calories": 340, "protein": 12, "cost": 8, "dietaryTags": ["vegetarian"] }
     ]
   },
   {
@@ -105,10 +112,11 @@
     "waitTime": 5,
     "category": "Cafe",
     "location": "4441 George Mason Blvd, Fairfax, VA 22030",
+    "dietaryOptions": ["vegetarian", "kosher"],
     "meals": [
-      { "meal": "Bagel with Cream Cheese", "calories": 380, "protein": 12, "cost": 7 },
-      { "meal": "Turkey Sausage Sandwich", "calories": 480, "protein": 28, "cost": 9 },
-      { "meal": "Avocado Toast Bagel", "calories": 420, "protein": 14, "cost": 8 }
+      { "meal": "Kosher Bagel with Cream Cheese", "calories": 380, "protein": 12, "cost": 7, "dietaryTags": ["vegetarian", "kosher"] },
+      { "meal": "Turkey Sausage Sandwich", "calories": 480, "protein": 28, "cost": 9, "dietaryTags": [] },
+      { "meal": "Avocado Toast Bagel", "calories": 420, "protein": 14, "cost": 8, "dietaryTags": ["vegetarian"] }
     ]
   },
   {
@@ -119,10 +127,11 @@
     "waitTime": 8,
     "category": "Retail",
     "location": "4469 Aquia Creek Ln, Fairfax, VA 22030",
+    "dietaryOptions": ["vegetarian", "halal"],
     "meals": [
-      { "meal": "Made-to-Order Sandwich", "calories": 520, "protein": 30, "cost": 9 },
-      { "meal": "Grain Bowl", "calories": 490, "protein": 22, "cost": 10 },
-      { "meal": "Chicken Wrap", "calories": 560, "protein": 35, "cost": 9 }
+      { "meal": "Halal Chicken Wrap", "calories": 560, "protein": 35, "cost": 9, "dietaryTags": ["halal"] },
+      { "meal": "Vegetarian Grain Bowl", "calories": 490, "protein": 22, "cost": 10, "dietaryTags": ["vegetarian"] },
+      { "meal": "Made-to-Order Sandwich", "calories": 520, "protein": 30, "cost": 9, "dietaryTags": [] }
     ]
   },
   {
@@ -133,10 +142,11 @@
     "waitTime": 7,
     "category": "Cafe",
     "location": "Johnson Center, Fairfax, VA 22030",
+    "dietaryOptions": ["vegetarian", "kosher"],
     "meals": [
-      { "meal": "Protein Box & Latte", "calories": 420, "protein": 18, "cost": 12 },
-      { "meal": "Egg & Cheese Sandwich", "calories": 380, "protein": 16, "cost": 8 },
-      { "meal": "Overnight Oats", "calories": 290, "protein": 10, "cost": 7 }
+      { "meal": "Protein Box & Latte", "calories": 420, "protein": 18, "cost": 12, "dietaryTags": [] },
+      { "meal": "Egg & Cheese Sandwich", "calories": 380, "protein": 16, "cost": 8, "dietaryTags": ["vegetarian"] },
+      { "meal": "Kosher Overnight Oats", "calories": 290, "protein": 10, "cost": 7, "dietaryTags": ["vegetarian", "kosher"] }
     ]
   },
   {
@@ -147,10 +157,11 @@
     "waitTime": 8,
     "category": "Retail",
     "location": "4441 George Mason Blvd, Fairfax, VA 22030",
+    "dietaryOptions": ["vegetarian"],
     "meals": [
-      { "meal": "Orange Chicken Plate", "calories": 890, "protein": 32, "cost": 10 },
-      { "meal": "Grilled Teriyaki Chicken", "calories": 640, "protein": 46, "cost": 10 },
-      { "meal": "Kung Pao Chicken", "calories": 720, "protein": 38, "cost": 10 }
+      { "meal": "Orange Chicken Plate", "calories": 890, "protein": 32, "cost": 10, "dietaryTags": [] },
+      { "meal": "Grilled Teriyaki Chicken", "calories": 640, "protein": 46, "cost": 10, "dietaryTags": [] },
+      { "meal": "Vegetable Spring Roll Bowl", "calories": 430, "protein": 14, "cost": 8, "dietaryTags": ["vegetarian"] }
     ]
   },
   {
@@ -161,10 +172,11 @@
     "waitTime": 9,
     "category": "Retail",
     "location": "Johnson Center, Fairfax, VA 22030",
+    "dietaryOptions": ["halal", "vegetarian"],
     "meals": [
-      { "meal": "Chicken Over Rice", "calories": 790, "protein": 48, "cost": 11 },
-      { "meal": "Gyro Combo", "calories": 820, "protein": 44, "cost": 12 },
-      { "meal": "Falafel Platter", "calories": 650, "protein": 22, "cost": 10 }
+      { "meal": "Halal Chicken Over Rice", "calories": 790, "protein": 48, "cost": 11, "dietaryTags": ["halal"] },
+      { "meal": "Halal Gyro Combo", "calories": 820, "protein": 44, "cost": 12, "dietaryTags": ["halal"] },
+      { "meal": "Falafel Platter", "calories": 650, "protein": 22, "cost": 10, "dietaryTags": ["halal", "vegetarian"] }
     ]
   },
   {
@@ -175,10 +187,11 @@
     "waitTime": 6,
     "category": "Retail",
     "location": "Fairfax Campus, VA 22030",
+    "dietaryOptions": ["vegetarian", "kosher"],
     "meals": [
-      { "meal": "Cheese Pizza Slice", "calories": 570, "protein": 22, "cost": 5 },
-      { "meal": "Pepperoni Pizza Slice", "calories": 640, "protein": 26, "cost": 6 },
-      { "meal": "Chicken Caesar Wrap", "calories": 520, "protein": 32, "cost": 9 }
+      { "meal": "Kosher Cheese Pizza Slice", "calories": 570, "protein": 22, "cost": 5, "dietaryTags": ["vegetarian", "kosher"] },
+      { "meal": "Pepperoni Pizza Slice", "calories": 640, "protein": 26, "cost": 6, "dietaryTags": [] },
+      { "meal": "Chicken Caesar Wrap", "calories": 520, "protein": 32, "cost": 9, "dietaryTags": [] }
     ]
   },
   {
@@ -189,10 +202,11 @@
     "waitTime": 8,
     "category": "Retail",
     "location": "Johnson Center, Fairfax, VA 22030",
+    "dietaryOptions": ["vegetarian"],
     "meals": [
-      { "meal": "Build Your Own Pizza", "calories": 640, "protein": 22, "cost": 10 },
-      { "meal": "Pepperoni Fast Fire'd Fold", "calories": 580, "protein": 24, "cost": 10 },
-      { "meal": "Protein Pizza", "calories": 720, "protein": 48, "cost": 12 }
+      { "meal": "Vegetarian Build Your Own Pizza", "calories": 640, "protein": 22, "cost": 10, "dietaryTags": ["vegetarian"] },
+      { "meal": "Pepperoni Fast Fire'd Fold", "calories": 580, "protein": 24, "cost": 10, "dietaryTags": [] },
+      { "meal": "Protein Pizza", "calories": 720, "protein": 48, "cost": 12, "dietaryTags": [] }
     ]
   },
   {
@@ -203,10 +217,11 @@
     "waitTime": 4,
     "category": "Cafe",
     "location": "Fairfax Campus, VA 22030",
+    "dietaryOptions": ["vegetarian"],
     "meals": [
-      { "meal": "Egg White Veggie Omelet Bites", "calories": 170, "protein": 13, "cost": 5 },
-      { "meal": "Bacon Egg & Cheese Sandwich", "calories": 500, "protein": 22, "cost": 6 },
-      { "meal": "Wake-Up Wrap", "calories": 180, "protein": 8, "cost": 3 }
+      { "meal": "Egg White Veggie Omelet Bites", "calories": 170, "protein": 13, "cost": 5, "dietaryTags": ["vegetarian"] },
+      { "meal": "Bacon Egg & Cheese Sandwich", "calories": 500, "protein": 22, "cost": 6, "dietaryTags": [] },
+      { "meal": "Wake-Up Wrap", "calories": 180, "protein": 8, "cost": 3, "dietaryTags": [] }
     ]
   },
   {
@@ -217,10 +232,11 @@
     "waitTime": 10,
     "category": "Retail",
     "location": "Fairfax Campus, VA 22030",
+    "dietaryOptions": ["vegetarian"],
     "meals": [
-      { "meal": "Original Double Steakburger", "calories": 630, "protein": 27, "cost": 7 },
-      { "meal": "Frisco Melt", "calories": 700, "protein": 32, "cost": 8 },
-      { "meal": "Grilled Chicken Sandwich", "calories": 350, "protein": 28, "cost": 7 }
+      { "meal": "Original Double Steakburger", "calories": 630, "protein": 27, "cost": 7, "dietaryTags": [] },
+      { "meal": "Frisco Melt", "calories": 700, "protein": 32, "cost": 8, "dietaryTags": [] },
+      { "meal": "Vegetarian Garden Melt", "calories": 430, "protein": 18, "cost": 7, "dietaryTags": ["vegetarian"] }
     ]
   },
   {
@@ -231,10 +247,11 @@
     "waitTime": 5,
     "category": "Retail",
     "location": "Johnson Center, Fairfax, VA 22030",
+    "dietaryOptions": ["vegetarian", "halal"],
     "meals": [
-      { "meal": "Grilled Chicken Wrap", "calories": 480, "protein": 36, "cost": 9 },
-      { "meal": "Acai Smoothie Bowl", "calories": 390, "protein": 12, "cost": 10 },
-      { "meal": "Kale Caesar Salad", "calories": 320, "protein": 18, "cost": 9 }
+      { "meal": "Halal Grilled Chicken Wrap", "calories": 480, "protein": 36, "cost": 9, "dietaryTags": ["halal"] },
+      { "meal": "Acai Smoothie Bowl", "calories": 390, "protein": 12, "cost": 10, "dietaryTags": ["vegetarian"] },
+      { "meal": "Kale Caesar Salad", "calories": 320, "protein": 18, "cost": 9, "dietaryTags": ["vegetarian"] }
     ]
   },
   {
@@ -245,10 +262,11 @@
     "waitTime": 6,
     "category": "Retail",
     "location": "Johnson Center, Fairfax, VA 22030",
+    "dietaryOptions": ["kosher"],
     "meals": [
-      { "meal": "Spicy Tuna Roll", "calories": 290, "protein": 18, "cost": 8 },
-      { "meal": "Salmon Avocado Roll", "calories": 320, "protein": 20, "cost": 9 },
-      { "meal": "Chicken Teriyaki Bowl", "calories": 540, "protein": 38, "cost": 10 }
+      { "meal": "Spicy Tuna Roll", "calories": 290, "protein": 18, "cost": 8, "dietaryTags": [] },
+      { "meal": "Kosher Salmon Avocado Roll", "calories": 320, "protein": 20, "cost": 9, "dietaryTags": ["kosher"] },
+      { "meal": "Chicken Teriyaki Bowl", "calories": 540, "protein": 38, "cost": 10, "dietaryTags": [] }
     ]
   }
 ]
